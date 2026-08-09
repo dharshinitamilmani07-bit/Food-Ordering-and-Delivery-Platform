@@ -1,121 +1,160 @@
 # Food-Ordering-Delivery-Platform
 The Food Ordering &amp; Delivery Platform is an application that allows users to browse food items, search for their favorite dishes, add items to a cart, and place food orders easily. The system also provides order tracking and order history.  The main feature of this project is an AI-based food recommendation system. 
 
-The Food Ordering & Delivery Platform is a web-based application that makes ordering food easy, fast, and convenient. It connects customers 👤, restaurants 🏪, delivery partners 🛵, and administrators 👨‍💼 in a single platform.
+## ✨ Features
 
-👤 1. Customer Module
+👤 User Registration and Login
 
-Customers can:
+🍕 View Available Food Items
 
-📝 Register and create an account
-🔐 Login securely
-🔍 Search for restaurants and food
-🍕 View food items and prices
-🛒 Add food to the cart
-➕ Increase or decrease quantity
-📦 Place food orders
-💳 Make online payments
-📍 Track order status
-⭐ Give ratings and reviews
+🔍 Search Food Items
 
-Example:
-A customer selects a restaurant → chooses biryani 🍗 → adds it to the cart 🛒 → places the order 📦 → makes payment 💳 → tracks delivery 📍.
+🛒 Add Food Items to Cart
 
-🏪 2. Restaurant Module
+➕ Update Food Quantity
 
-Restaurant owners can manage their restaurant through the platform.
+💰 Calculate Total Order Amount
 
-They can:
+📦 Place Food Orders
 
-🍽️ Add new food items
-💰 Update food prices
-📋 Manage the menu
-❌ Mark unavailable food
-📦 Receive customer orders
-✅ Accept or reject orders
-👨‍🍳 Update food preparation status
+🚚 View Order and Delivery Status
 
-Order Status:
-📥 Order Received → ✅ Accepted → 👨‍🍳 Preparing → 📦 Ready
+❌ Cancel Orders
 
-🛵 3. Delivery Partner Module
+🧾 Generate Order Summary
 
-Delivery partners are responsible for delivering food to customers.
+💾 Save Order Details to a Text File
 
-They can:
+🖥️ Simple Console-Based Interface
 
-📋 View assigned orders
-✅ Accept delivery requests
-🏪 Pick up food from restaurants
-📍 View customer location
-🛵 Deliver the food
-🔄 Update delivery status
+---
 
-Delivery Status:
-📦 Picked Up → 🛵 Out for Delivery → ✅ Delivered
+## 📁 Project Structure
 
-👨‍💼 4. Admin Module
+Food-Ordering-Delivery-Platform/
+│
+├── main.py
+├── users.py
+├── menu.py
+├── cart.py
+├── orders.py
+├── delivery.py
+├── requirements.txt
+├── README.md
+└── orders.txt
 
-The admin manages the complete platform.
+---
 
-Admin can:
+## 🛠️ Technologies Used
 
-👤 Manage customers
-🏪 Manage restaurants
-🛵 Manage delivery partners
-📦 Monitor orders
-🍕 Manage food items
-⭐ Manage reviews
-⚠️ Handle complaints
-📊 Monitor overall system activity
-🤖 5. AI Food Recommendation
+🐍 Python 3
 
-To make our project different from a normal food-ordering application, we can add an AI-based Food Recommendation System.
+🧩 Object-Oriented Programming (OOP)
 
-The AI analyzes the customer's:
+📂 File Handling
 
-📜 Previous orders
-❤️ Favorite food
-💰 Budget
-⭐ Ratings
-🍽️ Food preferences
+🔧 Modular Programming
 
-Then it recommends suitable food items.
+⌨️ Console-Based Interface
 
-Example:
-If a customer frequently orders vegetarian food under ₹200, the system can recommend similar vegetarian dishes within that budget.
+---
 
-It can show:
+## ▶️ How to Run
 
-🤖 Recommended for You
-🍽️ Based on Your Previous Orders
-🔥 Popular Food
-💰 Food Under ₹200
+### 1. Clone the repository
 
-🔄 Overall Workflow
+```bash
+git clone https://github.com/your-username/Food-Ordering-Delivery-Platform.git
+```
 
-👤 Customer
-⬇️
-🔐 Login
-⬇️
-🏪 Select Restaurant
-⬇️
-🍕 Choose Food
-⬇️
-🛒 Add to Cart
-⬇️
-📦 Place Order
-⬇️
-💳 Payment
-⬇️
-👨‍🍳 Restaurant Prepares Food
-⬇️
-🛵 Delivery Partner Picks Up
-⬇️
-📍 Food Delivered
-⬇️
-⭐ Rating & Review
+### 2. Open the project folder
 
-🎯 Main Objective
+```bash
+cd Food-Ordering-Delivery-Platform
+```
 
-The main objective of this project is to create a simple, user-friendly, and efficient food-ordering system that saves time for customers, helps restaurants manage orders efficiently, and makes the delivery process easier.
+### 3. Run the application
+
+```bash
+python main.py
+```
+
+---
+
+## 📋 Sample Output
+
+```text
+========================================
+       🍔 FOOD ORDERING SYSTEM 🍔
+========================================
+
+1. Login
+2. Register
+3. View Food Menu
+4. Add Food to Cart
+5. View Cart
+6. Place Order
+7. Track Order
+8. Cancel Order
+9. Exit
+
+Enter your choice: 3
+
+----------- FOOD MENU -----------
+
+1. 🍕 Pizza       - ₹200
+2. 🍔 Burger      - ₹120
+3. 🍜 Noodles     - ₹150
+4. 🍚 Fried Rice  - ₹180
+5. 🥪 Sandwich    - ₹100
+
+Enter your choice: 1
+
+Pizza added to cart successfully! ✅
+
+----------------------------------------
+Enter quantity: 2
+
+Item: Pizza
+Quantity: 2
+Price: ₹200
+Total: ₹400
+
+Order placed successfully! 🎉
+
+Order ID: ORD1001
+Delivery Status: Preparing Food 🍳
+----------------------------------------
+```
+
+---
+
+## 🚀 Future Enhancements
+
+💳 Online Payment Integration
+
+🗺️ Real-Time Delivery Tracking
+
+📱 Mobile Application
+
+🌐 Web-Based Interface
+
+🤖 AI-Based Food Recommendations
+
+⭐ Customer Rating and Review System
+
+📍 GPS-Based Delivery Location
+
+🔔 Order Notification System
+
+🧑‍💼 Restaurant Management Module
+
+📊 Admin Dashboard
+
+---
+
+## 🎯 Project Objective
+
+The main objective of this project is to develop a simple food ordering system that demonstrates how Python can be used to manage **users, food menus, shopping carts, orders, and delivery information** through a console-based application.
+
+This project also helps in understanding **Python programming, OOP concepts, file handling, modular programming, and real-world application development**.
