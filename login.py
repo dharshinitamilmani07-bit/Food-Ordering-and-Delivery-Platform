@@ -1,30 +1,36 @@
 import tkinter as tk
 from tkinter import messagebox
+from user import check_login
 from home import open_home
 
 
 def login_page(root):
 
+    for widget in root.winfo_children():
+        widget.destroy()
+
+    root.title("Food Ordering - Login")
+    root.geometry("500x500")
+
     tk.Label(
         root,
-        text="🍔 FOOD ORDERING",
+        text="FOOD ORDERING",
         font=("Arial", 24, "bold")
     ).pack(pady=40)
 
     tk.Label(
         root,
-        text="Email"
+        text="Email",
+        font=("Arial", 14)
     ).pack()
 
-    email_entry = tk.Entry(
-        root,
-        width=35
-    )
+    email_entry = tk.Entry(root, width=35)
     email_entry.pack(pady=10)
 
     tk.Label(
         root,
-        text="Password"
+        text="Password",
+        font=("Arial", 14)
     ).pack()
 
     password_entry = tk.Entry(
@@ -36,14 +42,14 @@ def login_page(root):
 
     def login():
 
-        email = email_entry.get()
+        email = email_entry.get().strip()
         password = password_entry.get()
 
-        if email == "user@gmail.com" and password == "1234":
+        if check_login(email, password):
 
             messagebox.showinfo(
-                "Login Successful",
-                "Welcome!"
+                "Success",
+                "Login Successful!"
             )
 
             root.destroy()
@@ -52,8 +58,8 @@ def login_page(root):
         else:
 
             messagebox.showerror(
-                "Login Failed",
-                "Invalid Email or Password!"
+                "Error",
+                "Invalid User ID or Password!"
             )
 
     tk.Button(
