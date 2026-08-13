@@ -1,5 +1,12 @@
 # Food-Ordering-and-Delivery-Platform
-The Food Ordering &amp; Delivery Platform is an application that allows users to browse food items, search for their favorite dishes, add items to a cart, and place food orders easily. The system also provides order tracking and order history.  The main feature of this project is an AI-based food recommendation system. 
+The Food Ordering &amp; Delivery Platform is an application that allows users to browse food items, search for their favorite dishes, add items to a cart, and place food orders easily. The system also provides order tracking and order history.  The main feature of this project is an AI-based food recommendation system.
+
+# Problem Statement
+
+In the current food ordering process, customers may face difficulties such as finding restaurants, checking menu availability, making secure payments, tracking orders, and receiving food on time. 😕 Restaurants may also struggle with managing multiple orders and coordinating with delivery partners. 🏪📦
+
+Therefore, there is a need for a **Food Ordering and Delivery System** that connects customers, restaurants, and delivery partners on a single platform. 📱✨ The system should provide easy food ordering, secure online payments, real-time order tracking, order management, and efficient delivery services. 🚀🍕
+
 
 ## ✨ Features
 
